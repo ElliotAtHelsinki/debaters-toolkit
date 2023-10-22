@@ -69,7 +69,8 @@
     "eject": "react-scripts eject",
     "dev": "concurrently -k \"cross-env BROWSER=none npm start\" \"npm:electron\"",
     "electron": "wait-on tcp:3000 && electron .",
-    "electron-pack": "electron-builder -c.extraMetadata.main=build/electron.js"
+    "electron-pack": "electron-builder -c.extraMetadata.main=build/electron.js",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
