@@ -1,0 +1,102 @@
+{
+  "name": "debaters-toolkit",
+  "description": "A toolkit that helps you generate debate motions, calculate break chances and do timekeeping.",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@capacitor/android": "^3.3.3",
+    "@capacitor/cli": "^3.3.3",
+    "@capacitor/core": "^3.3.3",
+    "@mui/icons-material": "^5.2.4",
+    "@mui/lab": "^5.0.0-alpha.60",
+    "@mui/material": "^5.2.4",
+    "@mui/styles": "^5.2.3",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "capacitor": "^0.5.5",
+    "core-js": "^3.19.2",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "electron-is-dev": "^2.0.0",
+    "eslint-webpack-plugin": "^3.1.1",
+    "firebase": "^8.6.7",
+    "grpc": "^1.24.11",
+    "lodash": "^4.17.21",
+    "react": "^18.1.0",
+    "react-dev-utils": "^11.0.4",
+    "react-device-detect": "^2.1.2",
+    "react-dom": "^18.1.0",
+    "react-download-link": "^2.3.0",
+    "react-ga": "^3.3.0",
+    "react-ga4": "^1.4.1",
+    "react-helmet": "^6.1.0",
+    "react-messenger-customer-chat": "^0.8.0",
+    "react-responsive": "^8.2.0",
+    "react-router": "^6.2.1",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "4.0.3",
+    "react-select": "^5.2.1",
+    "react-textarea-autosize": "^8.3.3",
+    "readdirp": "^3.6.0",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.52.1",
+    "styled-jsx": "^4.0.1",
+    "svgo": "^2.4.0",
+    "web-vitals": "^1.1.2",
+    "webpack": "4.44.2"
+  },
+  "main": "public/electron.js",
+  "build": {
+    "appId": "com.ElliotAtHelsinki.debaters-toolkit",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "extends": null,
+    "win": {
+      "icon": "public/media/icons/electron.png"
+    }
+  },
+  "homepage": "https://elliotathelsinki.github.io/debaters-toolkit",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "concurrently -k \"cross-env BROWSER=none npm start\" \"npm:electron\"",
+    "electron": "wait-on tcp:3000 && electron .",
+    "electron-pack": "electron-builder -c.extraMetadata.main=build/electron.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "packageManager": "yarn@3.6.4",
+  "devDependencies": {
+    "@types/react-select": "^5.0.1",
+    "concurrently": "^6.4.0",
+    "electron": "^16.0.2",
+    "electron-builder": "^22.14.5",
+    "gh-pages": "^6.0.0",
+    "wait-on": "^6.0.0",
+    "yarn": "^1.22.19"
+  }
+}
