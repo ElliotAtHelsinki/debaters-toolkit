@@ -1,6 +1,7 @@
 {
   "name": "debaters-toolkit",
   "description": "A toolkit that helps you generate debate motions, calculate break chances and do timekeeping.",
+  "author": "Quy Anh Nguyen",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
@@ -59,12 +60,18 @@
     "extends": null,
     "win": {
       "icon": "public/media/icons/electron.png"
+    },
+    "linux": {
+      "icon": "public/media/icons/electron.png"
+    },
+    "mac": {
+      "icon": "public/media/icons/electron.png"
     }
   },
-  "homepage": "https://elliotathelsinki.github.io/debaters-toolkit",
+  "homepage": "./",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "PUBLIC_URL=. react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dev": "concurrently -k \"cross-env BROWSER=none npm start\" \"npm:electron\"",
