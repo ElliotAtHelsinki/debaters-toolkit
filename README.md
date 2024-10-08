@@ -10,7 +10,7 @@ Debaters' toolkit is a helpful online toolkit for debaters. Users can search for
 
 ## Installation
 
-Visit elliotathelsinki.github.io/debaters-toolkit and add the app to your homescreen. You can also run the native version of the app on `Linux` using the `AppImage` file in [release](https://github.com/ElliotAtHelsinki/debaters-toolkit/releases/tag/v0.0.0). There used to be executables for `Android` and `Windows` as well, but they are no longer released after the project was migrated to this current repository. Those executables can be manually built, if necessary.  
+Visit elliotathelsinki.github.io/debaters-toolkit and add the app to your homescreen. You can also run the native version of the app on `Linux` using the `AppImage` file in [release](https://github.com/ElliotAtHelsinki/debaters-toolkit/releases/tag/v0.0.0). There used to be executables for `Android` and `Windows` as well, but they were no longer available after the project was migrated to this current repository. Those executables can be manually built, if necessary.  
 
 ## Notice of Discontinuation
 As of October 22nd, 2023, this project is no longer maintained. Many features no longer work correctly, and some other features have been disabled entirely. This repository now exists solely as a historical archive.
